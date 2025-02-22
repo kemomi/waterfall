@@ -5,6 +5,9 @@
  * @LastEditTime: 2025-02-22 15:29:32
  * @FilePath: github.com/kemomi/waterfall/README.md
 -->
+### 目录文件
+[https://github.com/kemomi/waterfall/tree/master]
+
 ### 关键实现说明：
 1. **响应式布局**：通过`ResizeObserver`监听容器变化，自动计算列数
 2. **性能优化**：使用`createDocumentFragment`进行批量DOM操作

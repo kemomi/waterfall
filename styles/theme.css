@@ -1,0 +1,26 @@
+:root {
+    /* 颜色变量 */
+    --bg-dark: #0A0E17;
+    --accent-blue: #00A3FF;
+    --accent-purple: #BD00FF;
+    --text-primary: rgba(255,255,255,0.9);
+    
+    /* 间距变量 */
+    --grid-gap: 2rem;
+    --card-padding: 1.5rem;
+    
+    /* 动态阴影 */
+    --glow-effect: 0 0 20px -5px var(--accent-blue);
+  }
+  
+  body {
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: 'Unreal Engine Font', sans-serif;
+  }
+  
+  /* 自定义字体 */
+  @font-face {
+    font-family: 'Unreal Engine Font';
+    src: url('../assets/fonts/Unreal-Engine-Font.woff2') format('woff2');
+  }

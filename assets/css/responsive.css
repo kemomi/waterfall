@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+    .waterfall-container {
+      column-count: 2;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .waterfall-container {
+      column-count: 1;
+    }
+  }
+  

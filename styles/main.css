@@ -1,0 +1,62 @@
+/* 瀑布流布局 */
+.masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: auto;
+    gap: var(--grid-gap);
+    padding: 2rem 10%;
+  }
+  
+  .card {
+    background: linear-gradient(145deg, #151E2B 0%, #0A121C 100%);
+    border-radius: 12px;
+    padding: var(--card-padding);
+    position: relative;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+  }
+  
+  /* 动态光效 */
+  .card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: radial-gradient(
+      800px circle at var(--mouse-x) var(--mouse-y),
+      rgba(0, 163, 255, 0.1),
+      transparent 40%
+    );
+    transition: opacity 0.3s;
+  }
+  
+  .card:hover::after {
+    opacity: 1;
+  }
+  
+  /* 3D预览容器 */
+  .model-viewer {
+    width: 100%;
+    height: 250px;
+    background: #000;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  /* 加载动画 */
+  .loader {
+    width: 48px;
+    height: 48px;
+    border: 3px solid #FFF;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    animation: rotation 1s linear infinite;
+  }
+  
+  @keyframes rotation {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+  }

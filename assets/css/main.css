@@ -1,0 +1,14 @@
+.waterfall-container {
+    column-count: 4;
+    column-gap: 1em;
+}
+
+.waterfall-item {
+    break-inside: avoid;
+    margin-bottom: 1em;
+}
+
+.waterfall-item img {
+    width: 100%;
+    height: auto;
+}

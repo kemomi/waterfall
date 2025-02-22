@@ -1,0 +1,17 @@
+[
+    {
+      "type": "feature",
+      "title": "Nanite虚拟几何体",
+      "description": "实现电影级细节的实时渲染...",
+      "model": "nanite_demo.glb",
+      "tags": ["rendering", "tech"],
+      "videoPreview": "nanite_demo.mp4"
+    },
+    {
+      "type": "tutorial",
+      "title": "Lumen全局光照教程",
+      "description": "从零开始掌握动态全局光照...",
+      "thumbnail": "lumen_tutorial.jpg",
+      "tags": ["lighting", "beginner"]
+    }
+  ]

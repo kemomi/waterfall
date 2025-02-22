@@ -1,0 +1,25 @@
+document.addEventListener('scroll', () => {
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+    // Load more content
+  }
+});
+// 使用Masonry库
+var msnry = new Masonry('.waterfall-container', {
+  itemSelector: '.waterfall-item',
+  columnWidth: '.waterfall-sizer',
+  gutter: 5
+});
+
+// 使用Isotope库
+var iso = new Isotope('.waterfall-container', {
+  itemSelector: '.waterfall-item',
+  layoutMode: 'masonry'
+});
+imagesLoaded('.waterfall-container', function() {
+  // 图片加载完成后，初始化瀑布流布局
+  var msnry = new Masonry('.waterfall-container', {
+    itemSelector: '.waterfall-item',
+    columnWidth: '.waterfall-sizer',
+    gutter: 10
+  });
+});
